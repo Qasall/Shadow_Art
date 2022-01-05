@@ -1,0 +1,99 @@
+ @font-face {
+    font-family: Montserat, DebbyC;
+    src: url(fomts/DebbyC/debbyc.ttf);
+}
+body {
+    font-family: Montserat;
+    font-size: 18px;   
+    background: linear-gradient(to top, #000000, #333131);    
+}
+
+
+
+
+/*----HEADER------*/
+header {    
+    background-color: #212121;      
+}
+.main-name {
+    font-family: DebbyC;
+    font-size: 80px;
+    color: #E4E6E6;
+}
+.second-name {
+    font-size: 36px;
+    font-family: Montserat;
+    color: #E4E6E6;
+}
+.third-name {
+    font-size: 24px;
+    font-family: Montserat;
+    color: #E4E6E6;
+}
+
+#come_on {
+    position: relative;
+    text-align: center;
+    padding: 2% 0;
+}
+#come_on .right, .left {
+    color: #f65d1b; /* Цвет линии для остальных браузеров */
+    border: none; /* Убираем границу для браузера Firefox */
+    background-color: #f65d1b; /* Цвет линии для браузера Firefox и Opera */
+    height: 2px; /* Толщина линии */
+    width: 40%;
+    position: absolute;
+    top: 30%;
+    border-width: 2px 0;
+}
+#come_on .right {
+    left: 60%;
+}
+
+button, #btn_click {
+    border: 2px solid #f65d1b;
+    border-radius: 6px;
+    background-color: rgb(246, 93, 27, 0);
+    color: #f65d1b;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover,
+#btn_click:hover {
+    background: #f65d1b;
+    color: white;
+}
+
+
+
+
+
+/*--------GALLERY-------------*/
+section {
+    border-bottom: 2px solid #f65d1b;
+    margin-bottom: 24px;
+}
+
+
+
+/*-------FUTER---------*/
+footer {
+    background-color: #212121;
+    padding: 1%;
+}
+
+footer a img {
+    width: 35px;
+    height: 35px;
+    padding: 8px 16px;
+}
+.call {
+    display: flex;
+}
+footer p {
+    margin: auto;
+    font-family: Montserat;
+    color: #E4E6E6;
+}
