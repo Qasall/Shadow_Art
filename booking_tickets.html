@@ -16,16 +16,47 @@
 </head>
 <body>
     <!--БИЛЕТ-->
-    <div id="ticket" class="modal fade">
-        <div class="modal-dialog">
+    <div id="ticket" class="modal fade" tabindex="-1" aria-labelledby="ticketlabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-headen">
-                    <button class="close" data-dismiss="modal">x</button>
-                    <h4 class="modal-title">Shadow_ART_Territory</h4>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ticketlabel">Shadow ART Territory</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">&#9932</button>
                 </div>
-                <div class="modal-body">Текст уведомления</div>
+                <div class="modal-body">
+                    <div class="show event">
+                        <h4>Выставка</h4>
+                        <p>Количество посетителей: <span>0</span></p>
+                        <p>Дата посещения: <span>19</span> марта</p>
+                        <p>Время посещения: <span>10.00</span></p>
+                    </div>
+                    <div class="photo event">
+                        <h4>Фото-зона</h4>
+                        <p>Количество посетителей: <span>0</span></p>
+                        <p>Дата посещения: <span>19</span> марта</p>
+                        <p>Время посещения: <span>10.00</span></p>
+                    </div>
+                    <div class="meet event">
+                        <h4>Встреча с мастером</h4>
+                        <p>Количество посетителей: <span>0</span></p>
+                        <p>Дата посещения: <span>19</span> марта</p>
+                        <p>Время посещения: <span>10.00</span></p>
+                    </div>
+                    <div class="workshop event">
+                        <h4>Мастерская</h4>
+                        <p>Количество посетителей: <span>0</span></p>
+                        <p>Дата посещения: <span>19</span> марта</p>
+                        <p>Время посещения: <span>10.00</span></p>
+                    </div>
+                    <div class="party event">
+                        <h4>Вечеринка</h4>
+                        <p>Количество посетителей: <span>0</span></p>
+                        <p>Дата посещения: <span>19</span> марта</p>
+                        <p>Время посещения: <span>10.00</span></p>
+                    </div>
+                </div>
                 <div class="modal-footer">
-                    <button class="btn btn-default" data-dismiss="modal">подтвердить заказ</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">скачать билет</button>
                 </div>
             </div>
         </div>
@@ -63,7 +94,7 @@
                 </div>
             </nav>
 
-           
+
             <div class="row">
                 <div class="col-8">
                     <!--пАНЕЛЬ ЗАКАЗА-->
@@ -74,7 +105,7 @@
                             <form id="show" action="#" method="get">
                                 <p>
                                     <label for="show-chack" class="form-label">Я планирую посетить это мероприятие</label>
-                                    <input type="checkbox" id="show-chack">
+                                    <input type="checkbox" id="show-chack" value="false">
                                 </p>
                                 <p>
                                     <label for="count-show" class="form-label">Сколько билетов Вам необходимо?</label>
@@ -146,17 +177,17 @@
 
                         <!--ВКЛАДКА ФОТО-->
                         <div class="tab-pane fade" id="photo-form" role="tabpanel" aria-labelledby="nav-profile-tab">
-                            <form id="show" action="#" method="get">
+                            <form id="photo" action="#" method="get">
                                 <p>
-                                    <label for="show-chack" class="form-label">Я планирую посетить это мероприятие</label>
-                                    <input type="checkbox" id="show-chack">
+                                    <label for="photo-chack" class="form-label">Я планирую посетить это мероприятие</label>
+                                    <input type="checkbox" id="photo-chack">
                                 </p>
                                 <p>
-                                    <label for="count-show" class="form-label">Сколько билетов Вам необходимо?</label>
-                                    <input name="count-show" autofocus type="number" min="1" max="5" step="1" />
+                                    <label for="count-photo" class="form-label">Сколько билетов Вам необходимо?</label>
+                                    <input name="count-photo" autofocus type="number" min="1" max="5" step="1" />
                                 </p>
 
-                                <fieldset name="show">
+                                <fieldset name="photo">
                                     <div class="row">
                                         <div class="col-sm">
                                             <p class="date">19 марта</p>
@@ -194,17 +225,17 @@
 
                         <!--ВКЛАДКА ВСТРЕЧИ-->
                         <div class="tab-pane fade" id="meet-form" role="tabpanel" aria-labelledby="nav-contact-tab">
-                            <form id="show" action="#" method="get">
+                            <form id="meet" action="#" method="get">
                                 <p>
-                                    <label for="show-chack" class="form-label">Я планирую посетить это мероприятие</label>
-                                    <input type="checkbox" id="show-chack">
+                                    <label for="meet-chack" class="form-label">Я планирую посетить это мероприятие</label>
+                                    <input type="checkbox" id="meet-chack">
                                 </p>
                                 <p>
-                                    <label for="count-show" class="form-label">Сколько билетов Вам необходимо?</label>
-                                    <input name="count-show" autofocus type="number" min="1" max="20" step="1" />
+                                    <label for="count-meet" class="form-label">Сколько билетов Вам необходимо?</label>
+                                    <input name="count-meet" autofocus type="number" min="1" max="20" step="1" />
                                 </p>
 
-                                <fieldset name="show">
+                                <fieldset name="meet">
                                     <div class="row">
                                         <div class="col-sm">
                                             <p class="date">22 марта</p>
@@ -222,17 +253,17 @@
 
                         <!--ВКЛАДКА МАСТЕРСКОЙ-->
                         <div class="tab-pane fade" id="workshop-form" role="tabpanel" aria-labelledby="nav-contact-tab">
-                            <form id="show" action="#" method="get">
+                            <form id="workshop" action="#" method="get">
                                 <p>
-                                    <label for="show-chack" class="form-label">Я планирую посетить это мероприятие</label>
-                                    <input type="checkbox" id="show-chack">
+                                    <label for="workshop-chack" class="form-label">Я планирую посетить это мероприятие</label>
+                                    <input type="checkbox" id="workshop-chack">
                                 </p>
                                 <p>
-                                    <label for="count-show" class="form-label">Сколько билетов Вам необходимо?</label>
-                                    <input name="count-show" autofocus type="number" min="1" max="15" step="1" />
+                                    <label for="count-workshop" class="form-label">Сколько билетов Вам необходимо?</label>
+                                    <input name="count-workshop" autofocus type="number" min="1" max="15" step="1" />
                                 </p>
 
-                                <fieldset name="show">
+                                <fieldset name="workshop">
                                     <div class="row">
                                         <div class="col-sm">
                                             <p class="date">22 марта</p>
@@ -250,17 +281,17 @@
 
                         <!--ВКЛАДКА ВЕЧЕРИНКИ-->
                         <div class="tab-pane fade" id="party-form" role="tabpanel" aria-labelledby="nav-contact-tab">
-                            <form id="show" action="#" method="get">
+                            <form id="party" action="#" method="get">
                                 <p>
-                                    <label for="show-chack" class="form-label">Я планирую посетить это мероприятие</label>
-                                    <input type="checkbox" id="show-chack">
+                                    <label for="party-chack" class="form-label">Я планирую посетить это мероприятие</label>
+                                    <input type="checkbox" id="party-chack">
                                 </p>
                                 <p>
-                                    <label for="count-show" class="form-label">Сколько билетов Вам необходимо?</label>
-                                    <input name="count-show" autofocus type="number" min="1" max="20" step="1" />
+                                    <label for="count-party" class="form-label">Сколько билетов Вам необходимо?</label>
+                                    <input name="count-party" autofocus type="number" min="1" max="20" step="1" />
                                 </p>
 
-                                <fieldset name="show">
+                                <fieldset name="party">
                                     <div class="row">
                                         <div class="col-sm">
                                             <p class="date">23 марта</p>
@@ -277,12 +308,12 @@
                 <div class="col-3">
                     <!--КАЛЬКУЛЯТОР СТОИМОСТИ-->
                     <div class="card calculator">
-                        <h5 class="card-header">Калькулятор стоимости билета</h5>                        
+                        <h5 class="card-header">Калькулятор стоимости билета</h5>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">
                                 <div class="card text-center" style="width: 100%;">
                                     <div class="card-body">
-                                        <h4 class="card-title">00.00</h4>
+                                        <h4 class="card-title" id="price">00.00</h4>
                                         <p class="card-text">цена билета данного мероприятия</p>
                                     </div>
                                 </div>
@@ -290,7 +321,7 @@
                             <li class="list-group-item">
                                 <div class="card text-center" style="width: 100%;">
                                     <div class="card-body">
-                                        <h4 class="card-title">00.00</h4>
+                                        <h4 class="card-title" id="ticket_amount">00.00</h4>
                                         <p class="card-text">с учётом количества билетов</p>
                                     </div>
                                 </div>
@@ -298,39 +329,32 @@
                             <li class="list-group-item">
                                 <div class="card text-center" style="width: 100%;">
                                     <div class="card-body">
-                                        <h4 class="card-title">00.00</h4>
+                                        <h4 class="card-title" id="total_amount">00.00</h4>
                                         <p class="card-text">общая сумма заказа</p>
                                     </div>
                                 </div>
                             </li>
-                        </ul>      
+                        </ul>
 
 
                         <!--СФОРМИРОВАТЬ ЗАКАЗ-->
                         <div class="card-footer">
                             <div id="come_on">
-                                <button data-toggle="modal" data-target="#tiket">забронировать бинет</button>
-                                <button data-toggle="modal" data-target="#tiket">оплатить сейчас</button>
+                                <button id="ticket_booked" type="button" data-bs-toggle="modal" data-bs-target="#ticket">забронировать билет</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </main>
 
     <footer></footer>
 
 
-    <script>
-        $('#ticket').on('hidden.bs.modal', function (event) {
-            alert("Выполнено");
-        });
-    </script>
-
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="js/ticket_calculator.js"></script>
 </body>
 </html>
