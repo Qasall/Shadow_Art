@@ -26,33 +26,39 @@
                 <div class="modal-body">
                     <div class="show event">
                         <h4>Выставка</h4>
-                        <p>Количество посетителей: <span>0</span></p>
-                        <p>Дата посещения: <span>19</span> марта</p>
-                        <p>Время посещения: <span>10.00</span></p>
+                        <p>Цена билета: 12.50</p>
+                        <p>Количество посетителей: <span class="count">0</span></p>
+                        <p>Дата посещения: <span class="date">19</span> марта</p>
+                        <p>Время посещения: <span class="time">10.00</span></p>
+                        <p>Стоимость посещения: <span class="total">0.00</span></p>
                     </div>
                     <div class="photo event">
-                        <h4>Фото-зона</h4>
-                        <p>Количество посетителей: <span>0</span></p>
-                        <p>Дата посещения: <span>19</span> марта</p>
-                        <p>Время посещения: <span>10.00</span></p>
+                        <p>Цена билета: 20.80</p>
+                        <p>Количество посетителей: <span class="count">0</span></p>
+                        <p>Дата посещения: <span class="date">19</span> марта</p>
+                        <p>Время посещения: <span class="time">10.00</span></p>
+                        <p>Стоимость посещения: <span class="total">0.00</span></p>
                     </div>
                     <div class="meet event">
-                        <h4>Встреча с мастером</h4>
-                        <p>Количество посетителей: <span>0</span></p>
-                        <p>Дата посещения: <span>19</span> марта</p>
-                        <p>Время посещения: <span>10.00</span></p>
+                        <p>Цена билета: 15.00</p>
+                        <p>Количество посетителей: <span class="count">0</span></p>
+                        <p>Дата посещения: <span class="date">19</span> марта</p>
+                        <p>Время посещения: <span class="time">10.00</span></p>
+                        <p>Стоимость посещения: <span class="total">0.00</span></p>
                     </div>
                     <div class="workshop event">
-                        <h4>Мастерская</h4>
-                        <p>Количество посетителей: <span>0</span></p>
-                        <p>Дата посещения: <span>19</span> марта</p>
-                        <p>Время посещения: <span>10.00</span></p>
+                        <p>Цена билета: 10.50</p>
+                        <p>Количество посетителей: <span class="count">0</span></p>
+                        <p>Дата посещения: <span class="date">19</span> марта</p>
+                        <p>Время посещения: <span class="time">10.00</span></p>
+                        <p>Стоимость посещения: <span class="total">0.00</span></p>
                     </div>
                     <div class="party event">
-                        <h4>Вечеринка</h4>
-                        <p>Количество посетителей: <span>0</span></p>
-                        <p>Дата посещения: <span>19</span> марта</p>
-                        <p>Время посещения: <span>10.00</span></p>
+                        <p>Цена билета: 40.00</p>
+                        <p>Количество посетителей: <span class="count">0</span></p>
+                        <p>Дата посещения: <span class="date">19</span> марта</p>
+                        <p>Время посещения: <span class="time">10.00</span></p>
+                        <p>Стоимость посещения: <span class="total">0.00</span></p>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -86,11 +92,11 @@
             <!--ПАНЕЛИ ВЫБОРА-->
             <nav>
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#show-form" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Выставка</button>
-                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#photo-form" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Фото-зона</button>
-                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#meet-form" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Встреча с мастером</button>
-                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#workshop-form" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Мастерская</button>
-                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#party-form" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Вечеринка</button>
+                    <button class="nav-link active" id="nav-show-tab" data-bs-toggle="tab" data-bs-target="#show-form" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Выставка</button>
+                    <button class="nav-link" id="nav-photo-tab" data-bs-toggle="tab" data-bs-target="#photo-form" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Фото-зона</button>
+                    <button class="nav-link" id="nav-meet-tab" data-bs-toggle="tab" data-bs-target="#meet-form" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Встреча с мастером</button>
+                    <button class="nav-link" id="nav-warkshop-tab" data-bs-toggle="tab" data-bs-target="#workshop-form" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Мастерская</button>
+                    <button class="nav-link" id="nav-party-tab" data-bs-toggle="tab" data-bs-target="#party-form" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Вечеринка</button>
                 </div>
             </nav>
 
@@ -105,70 +111,70 @@
                             <form id="show" action="#" method="get">
                                 <p>
                                     <label for="show-chack" class="form-label">Я планирую посетить это мероприятие</label>
-                                    <input type="checkbox" id="show-chack" value="false">
+                                    <input type="checkbox" id="show-chack">
                                 </p>
                                 <p>
                                     <label for="count-show" class="form-label">Сколько билетов Вам необходимо?</label>
-                                    <input name="count-show" autofocus type="number" min="1" max="20" step="1" />
+                                    <input id="count-show" autofocus type="number" min="1" max="20" step="1" value="1" />
                                 </p>
 
                                 <fieldset name="show">
                                     <div class="row">
                                         <div class="col-sm">
                                             <p class="date">19 марта</p>
-                                            <p><label class="form-label">10.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">11.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">12.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">13.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">14.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">15.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">16.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">17.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">18.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">19.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">20.00 <input type="radio" name="time-show" /></label></p>
+                                            <p><label class="form-label">10.00 <input type="radio" name="time-show" value="10.00" /></label></p>
+                                            <p><label class="form-label">11.00 <input type="radio" name="time-show" value="11.00" /></label></p>
+                                            <p><label class="form-label">12.00 <input type="radio" name="time-show" value="12.00" /></label></p>
+                                            <p><label class="form-label">13.00 <input type="radio" name="time-show" value="13.00" /></label></p>
+                                            <p><label class="form-label">14.00 <input type="radio" name="time-show" value="14.00" /></label></p>
+                                            <p><label class="form-label">15.00 <input type="radio" name="time-show" value="15.00" /></label></p>
+                                            <p><label class="form-label">16.00 <input type="radio" name="time-show" value="16.00" /></label></p>
+                                            <p><label class="form-label">17.00 <input type="radio" name="time-show" value="17.00" /></label></p>
+                                            <p><label class="form-label">18.00 <input type="radio" name="time-show" value="18.00" /></label></p>
+                                            <p><label class="form-label">19.00 <input type="radio" name="time-show" value="19.00" /></label></p>
+                                            <p><label class="form-label">20.00 <input type="radio" name="time-show" value="20.00" /></label></p>
                                         </div>
                                         <div class="col-sm">
                                             <p class="date">20 марта</p>
-                                            <p><label class="form-label">10.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">11.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">12.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">13.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">14.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">15.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">16.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">17.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">18.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">19.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">20.00 <input type="radio" name="time-show" /></label></p>
+                                            <p><label class="form-label">10.00 <input type="radio" name="time-show" value="10.00" /></label></p>
+                                            <p><label class="form-label">11.00 <input type="radio" name="time-show" value="11.00" /></label></p>
+                                            <p><label class="form-label">12.00 <input type="radio" name="time-show" value="12.00" /></label></p>
+                                            <p><label class="form-label">13.00 <input type="radio" name="time-show" value="13.00" /></label></p>
+                                            <p><label class="form-label">14.00 <input type="radio" name="time-show" value="14.00" /></label></p>
+                                            <p><label class="form-label">15.00 <input type="radio" name="time-show" value="15.00" /></label></p>
+                                            <p><label class="form-label">16.00 <input type="radio" name="time-show" value="16.00" /></label></p>
+                                            <p><label class="form-label">17.00 <input type="radio" name="time-show" value="17.00" /></label></p>
+                                            <p><label class="form-label">18.00 <input type="radio" name="time-show" value="18.00" /></label></p>
+                                            <p><label class="form-label">19.00 <input type="radio" name="time-show" value="19.00" /></label></p>
+                                            <p><label class="form-label">20.00 <input type="radio" name="time-show" value="20.00" /></label></p>
                                         </div>
                                         <div class="col-sm">
                                             <p class="date">21 марта</p>
-                                            <p><label class="form-label">10.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">11.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">12.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">13.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">14.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">15.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">16.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">17.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">18.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">19.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">20.00 <input type="radio" name="time-show" /></label></p>
+                                            <p><label class="form-label">10.00 <input type="radio" name="time-show" value="10.00" /></label></p>
+                                            <p><label class="form-label">11.00 <input type="radio" name="time-show" value="11.00" /></label></p>
+                                            <p><label class="form-label">12.00 <input type="radio" name="time-show" value="12.00" /></label></p>
+                                            <p><label class="form-label">13.00 <input type="radio" name="time-show" value="13.00" /></label></p>
+                                            <p><label class="form-label">14.00 <input type="radio" name="time-show" value="14.00" /></label></p>
+                                            <p><label class="form-label">15.00 <input type="radio" name="time-show" value="15.00" /></label></p>
+                                            <p><label class="form-label">16.00 <input type="radio" name="time-show" value="16.00" /></label></p>
+                                            <p><label class="form-label">17.00 <input type="radio" name="time-show" value="17.00" /></label></p>
+                                            <p><label class="form-label">18.00 <input type="radio" name="time-show" value="18.00" /></label></p>
+                                            <p><label class="form-label">19.00 <input type="radio" name="time-show" value="19.00" /></label></p>
+                                            <p><label class="form-label">20.00 <input type="radio" name="time-show" value="20.00" /></label></p>
                                         </div>
                                         <div class="col-sm">
                                             <p class="date">22 марта</p>
-                                            <p><label class="form-label">10.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">11.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">12.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">13.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">14.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">15.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">16.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">17.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">18.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">19.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">20.00 <input type="radio" name="time-show" /></label></p>
+                                            <p><label class="form-label">10.00 <input type="radio" name="time-show" value="10.00" /></label></p>
+                                            <p><label class="form-label">11.00 <input type="radio" name="time-show" value="11.00" /></label></p>
+                                            <p><label class="form-label">12.00 <input type="radio" name="time-show" value="12.00" /></label></p>
+                                            <p><label class="form-label">13.00 <input type="radio" name="time-show" value="13.00" /></label></p>
+                                            <p><label class="form-label">14.00 <input type="radio" name="time-show" value="14.00" /></label></p>
+                                            <p><label class="form-label">15.00 <input type="radio" name="time-show" value="15.00" /></label></p>
+                                            <p><label class="form-label">16.00 <input type="radio" name="time-show" value="16.00" /></label></p>
+                                            <p><label class="form-label">17.00 <input type="radio" name="time-show" value="17.00" /></label></p>
+                                            <p><label class="form-label">18.00 <input type="radio" name="time-show" value="18.00" /></label></p>
+                                            <p><label class="form-label">19.00 <input type="radio" name="time-show" value="19.00" /></label></p>
+                                            <p><label class="form-label">20.00 <input type="radio" name="time-show" value="20.00" /></label></p>
                                         </div>
                                     </div>
                                 </fieldset>
@@ -191,32 +197,32 @@
                                     <div class="row">
                                         <div class="col-sm">
                                             <p class="date">19 марта</p>
-                                            <p><label class="form-label">10.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">11.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">12.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">13.00 <input type="radio" name="time-show" /></label></p>
+                                            <p><label class="form-label">10.00 <input type="radio" name="time-photo" value="10.00" /></label></p>
+                                            <p><label class="form-label">11.00 <input type="radio" name="time-photo" value="11.00" /></label></p>
+                                            <p><label class="form-label">12.00 <input type="radio" name="time-photo" value="12.00" /></label></p>
+                                            <p><label class="form-label">13.00 <input type="radio" name="time-photo" value="13.00" /></label></p>
                                         </div>
                                         <div class="col-sm">
                                             <p class="date">20 марта</p>
-                                            <p><label class="form-label">10.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">11.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">12.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">13.00 <input type="radio" name="time-show" /></label></p>
+                                            <p><label class="form-label">10.00 <input type="radio" name="time-photo" value="10.00" /></label></p>
+                                            <p><label class="form-label">11.00 <input type="radio" name="time-photo" value="11.00" /></label></p>
+                                            <p><label class="form-label">12.00 <input type="radio" name="time-photo" value="12.00" /></label></p>
+                                            <p><label class="form-label">13.00 <input type="radio" name="time-photo" value="13.00" /></label></p>
 
                                         </div>
                                         <div class="col-sm">
                                             <p class="date">21 марта</p>
-                                            <p><label class="form-label">10.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">11.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">12.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">13.00 <input type="radio" name="time-show" /></label></p>
+                                            <p><label class="form-label">10.00 <input type="radio" name="time-photo" value="10.00" /></label></p>
+                                            <p><label class="form-label">11.00 <input type="radio" name="time-photo" value="11.00" /></label></p>
+                                            <p><label class="form-label">12.00 <input type="radio" name="time-photo" value="12.00" /></label></p>
+                                            <p><label class="form-label">13.00 <input type="radio" name="time-photo" value="13.00" /></label></p>
                                         </div>
                                         <div class="col-sm">
                                             <p class="date">23 марта</p>
-                                            <p><label class="form-label">18.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">19.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">20.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">21.00 <input type="radio" name="time-show" /></label></p>
+                                            <p><label class="form-label">18.00 <input type="radio" name="time-photo" value="10.00" /></label></p>
+                                            <p><label class="form-label">19.00 <input type="radio" name="time-photo" value="11.00" /></label></p>
+                                            <p><label class="form-label">20.00 <input type="radio" name="time-photo" value="12.00" /></label></p>
+                                            <p><label class="form-label">21.00 <input type="radio" name="time-photo" value="13.00" /></label></p>
                                         </div>
                                     </div>
                                 </fieldset>
@@ -239,12 +245,12 @@
                                     <div class="row">
                                         <div class="col-sm">
                                             <p class="date">22 марта</p>
-                                            <p><label class="form-label">10.00 - 12.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">14.00 - 16.00 <input type="radio" name="time-show" /></label></p>
+                                            <p><label class="form-label">10.00 - 12.00 <input type="radio" name="time-meet" value="10.00 - 12.00" /></label></p>
+                                            <p><label class="form-label">14.00 - 16.00 <input type="radio" name="time-meet" value="14.00 - 16.00" /></label></p>
                                         </div>
                                         <div class="col-sm">
                                             <p class="date">23 марта</p>
-                                            <p><label class="form-label">10.00 - 12.00 <input type="radio" name="time-show" /></label></p>
+                                            <p><label class="form-label">10.00 - 12.00 <input type="radio" name="time-meet" value="10.00 - 12.00" /></label></p>
                                         </div>
                                     </div>
                                 </fieldset>
@@ -267,12 +273,12 @@
                                     <div class="row">
                                         <div class="col-sm">
                                             <p class="date">22 марта</p>
-                                            <p><label class="form-label">10.00 - 12.00 <input type="radio" name="time-show" /></label></p>
-                                            <p><label class="form-label">14.00 - 16.00 <input type="radio" name="time-show" /></label></p>
+                                            <p><label class="form-label">10.00 - 12.00 <input type="radio" name="time-workshop" value="10.00 - 12.00" /></label></p>
+                                            <p><label class="form-label">14.00 - 16.00 <input type="radio" name="time-workshop" value="14.00 - 16.00" /></label></p>
                                         </div>
                                         <div class="col-sm">
                                             <p class="date">23 марта</p>
-                                            <p><label class="form-label">10.00 - 12.00 <input type="radio" name="time-show" /></label></p>
+                                            <p><label class="form-label">10.00 - 12.00 <input type="radio" name="time-workshop" value="10.00 - 12.00" /></label></p>
                                         </div>
                                     </div>
                                 </fieldset>
@@ -295,7 +301,7 @@
                                     <div class="row">
                                         <div class="col-sm">
                                             <p class="date">23 марта</p>
-                                            <p><label class="form-label">19.00 - 23.00 <input type="radio" name="time-show" /></label></p>
+                                            <p><label class="form-label">19.00 - 23.00 <input type="radio" name="time-party" value="19.00 - 23.00" /></label></p>
                                         </div>
                                     </div>
                                 </fieldset>
@@ -313,7 +319,7 @@
                             <li class="list-group-item">
                                 <div class="card text-center" style="width: 100%;">
                                     <div class="card-body">
-                                        <h4 class="card-title" id="price">00.00</h4>
+                                        <h4 class="card-title" id="price">0.00</h4>
                                         <p class="card-text">цена билета данного мероприятия</p>
                                     </div>
                                 </div>
@@ -321,7 +327,7 @@
                             <li class="list-group-item">
                                 <div class="card text-center" style="width: 100%;">
                                     <div class="card-body">
-                                        <h4 class="card-title" id="ticket_amount">00.00</h4>
+                                        <h4 class="card-title" id="ticket_amount">0.00</h4>
                                         <p class="card-text">с учётом количества билетов</p>
                                     </div>
                                 </div>
@@ -329,7 +335,7 @@
                             <li class="list-group-item">
                                 <div class="card text-center" style="width: 100%;">
                                     <div class="card-body">
-                                        <h4 class="card-title" id="total_amount">00.00</h4>
+                                        <h4 class="card-title" id="total_amount">0.00</h4>
                                         <p class="card-text">общая сумма заказа</p>
                                     </div>
                                 </div>
