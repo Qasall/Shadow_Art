@@ -2,6 +2,7 @@
 
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,51 +11,120 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel=stylesheet href="css/reset.css">
-    <link rel=stylesheet href="css/style.css">
+    <link rel=stylesheet href="css/style.css">    
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/dist/mdb5/standard/compiled.min.css">
     <link rel="stylesheet" href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/dist/mdb5/plugins/all.min.css">
     <link rel='stylesheet' id='roboto-subset.css-css' href='https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/mdb5/fonts/roboto-subset.css?ver=3.9.0-update.5' type='text/css' media='all' />
-    
+
     <title>Shadow_ART_Territory</title>
 </head>
+
 <body>
+    <!--БИЛЕТ-->
+    <div id="ticket" class="modal fade" tabindex="-1" aria-labelledby="ticketlabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ticketlabel">Shadow ART Territory</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">&#9932</button>
+                </div>
+                <div class="modal-body">
+                    <div class="show event">
+                        <h4>Выставка</h4>
+                        <p>Цена билета: 12.50</p>
+                        <p>Количество посетителей: <span class="count">0</span></p>
+                        <p>Дата посещения: <span class="date">19 марта</span></p>
+                        <p>Время посещения: <span class="time">10.00</span></p>
+                        <p>Стоимость посещения: <span class="summa">0.00</span></p>
+                    </div>
+                    <div class="photo event">
+                        <h4>Фото-зона</h4>
+                        <p>Цена билета: 20.80</p>
+                        <p>Количество посетителей: <span class="count">0</span></p>
+                        <p>Дата посещения: <span class="date">19 марта</span></p>
+                        <p>Время посещения: <span class="time">10.00</span></p>
+                        <p>Стоимость посещения: <span class="summa">0.00</span></p>
+                    </div>
+                    <div class="meet event">
+                        <h4>Встреча с мастером</h4>
+                        <p>Цена билета: 15.00</p>
+                        <p>Количество посетителей: <span class="count">0</span></p>
+                        <p>Дата посещения: <span class="date">19 марта</span></p>
+                        <p>Время посещения: <span class="time">10.00</span></p>
+                        <p>Стоимость посещения: <span class="summa">0.00</span></p>
+                    </div>
+                    <div class="workshop event">
+                        <h4>Мастерская</h4>
+                        <p>Цена билета: 10.50</p>
+                        <p>Количество посетителей: <span class="count">0</span></p>
+                        <p>Дата посещения: <span class="date">19 марта</span></p>
+                        <p>Время посещения: <span class="time">10.00</span></p>
+                        <p>Стоимость посещения: <span class="summa">0.00</span></p>
+                    </div>
+                    <div class="party event">
+                        <h4>Вечеринка</h4>
+                        <p>Цена билета: 40.00</p>
+                        <p>Количество посетителей: <span class="count">0</span></p>
+                        <p>Дата посещения: <span class="date">19 марта</span></p>
+                        <p>Время посещения: <span class="time">10.00</span></p>
+                        <p>Стоимость посещения: <span class="summa">0.00</span></p>
+                    </div>
+                    <div>
+                        <p>Сумма чека: <span class="total">0</span></p>                        
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">скачать билет</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <header>
         <div>
             <h1 class="main-name text-center">Shadow ART Territory</h1>
             <h2 class="second-name text-center">выставка теневого искусства</h2>
-            <h2 class="second-name text-center">19 - 27 марта</h2>
+            <h2 class="second-name text-center">19 - 23 марта</h2>
             <h3 class="third-name text-center">ул. Октябрьская 16, Минск</h3>
         </div>
         <div id="come_on">
             <button id="btn_click">присоединяйся</button>
             <hr class="left" />
-            <hr class="right" />
+            <!-- <hr class="right" /> -->
         </div>
         <!--ПЕРЕХОД ПО КНОПКЕ-->
         <script>
-            $('#btn_click').on('click', function () { window.location = 'booking_tickets.html'; });
+            $('#btn_click').on('click', function () {
+                window.location = '#nav-tab';
+            });
         </script>
 
     </header>
-    <main>        
-        <section class="p-4 text-center w-100">
+
+
+    <!--ГАЛЕРЕЯ-->
+    <section class="h-100">
+        <div class="d-flex align-items-center p-4 mb-4">
             <div class="lightbox" data-id="lightbox-g6p51d409">
                 <div class="multi-carousel">
                     <div class="multi-carousel-inner">
-
                         <div class="multi-carousel-item" style="width: 33.3333%;">
-                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/4.webp" data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/4.webp" alt="Place Royale Bruxelles" class="w-100">
+                            <img src="img/meet.jpg" data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/4.webp" alt="Place Royale Bruxelles" class="w-100 multi-carousel-img">
                         </div>
                         <div class="multi-carousel-item" style="width: 33.3333%; margin-left: 0px;">
-                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/1.webp" data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp" alt="Table Full of Spices" class="w-100">
+                            <img src="img/party.jpg" data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp" alt="Table Full of Spices" class="w-100 multi-carousel-img">
                         </div>
                         <div class="multi-carousel-item" style="width: 33.3333%; margin-left: 0px;">
-                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/2.webp" data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/2.webp" alt="Winter Landscape" class="w-100">
+                            <img src="img/photo.jpg" data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/2.webp" alt="Winter Landscape" class="w-100 multi-carousel-img">
                         </div>
                         <div class="multi-carousel-item" style="width: 33.3333%; margin-left: 0px;">
-                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/3.webp" data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/3.webp" alt="View of the City in the Mountains" class="w-100">
+                            <img src="img/show.jpg" data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/3.webp" alt="View of the City in the Mountains" class="w-100 multi-carousel-img">
+                        </div>
+                        <div class="multi-carousel-item" style="width: 33.3333%; margin-left: 0px;">
+                            <img src="img/workshop.jpg" data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/3.webp" alt="View of the City in the Mountains" class="w-100 multi-carousel-img">
                         </div>
                     </div>
 
@@ -66,13 +136,310 @@
                     </button>
                 </div>
             </div>
-        </section>         
-    </main>
+        </div>
+    </section>
+
+
+
+    <!--ЗАКАЗ БИЛЕТОВ-->
+    <section>
+        <div class="container selection-bar">
+            <!--ПАНЕЛИ ВЫБОРА-->
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-show-tab" data-bs-toggle="tab" data-bs-target="#show-form" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Выставка</button>
+                    <button class="nav-link" id="nav-photo-tab" data-bs-toggle="tab" data-bs-target="#photo-form" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Фото-зона</button>
+                    <button class="nav-link" id="nav-meet-tab" data-bs-toggle="tab" data-bs-target="#meet-form" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Встреча с мастером</button>
+                    <button class="nav-link" id="nav-warkshop-tab" data-bs-toggle="tab" data-bs-target="#workshop-form" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Мастерская</button>
+                    <button class="nav-link" id="nav-party-tab" data-bs-toggle="tab" data-bs-target="#party-form" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Вечеринка</button>
+                </div>
+            </nav>
+
+
+            <div class="row">
+                <div class="col-8">
+                    <!--пАНЕЛЬ ЗАКАЗА-->
+                    <div class="tab-content" id="nav-tabContent">
+
+                        <!--ВКЛАДКА ВЫСТАВКИ-->
+                        <div class="tab-pane fade show active" id="show-form" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <form id="show" action="#" method="get">
+                                <p>
+                                    <label for="show-chack" class="form-label">Установите "флажок", если Вы планируете посетить это мероприятие</label>
+                                    <input type="checkbox" id="show-chack">
+                                </p>
+                                <p>
+                                    <label for="count-show" class="form-label">Сколько билетов Вам необходимо?</label>
+                                    <input id="count-show" type="number" min="1" max="20" step="1" value="0" />
+                                </p>
+                                <p>Ниже выберите время и дату посещения</p>
+
+                                <fieldset name="show">
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <p class="date">19 марта</p>
+                                            <p><label class="form-label">10.00 <input type="radio" name="time-show" value="10.00" /></label></p>
+                                            <p><label class="form-label">11.00 <input type="radio" name="time-show" value="11.00" /></label></p>
+                                            <p><label class="form-label">12.00 <input type="radio" name="time-show" value="12.00" /></label></p>
+                                            <p><label class="form-label">13.00 <input type="radio" name="time-show" value="13.00" /></label></p>
+                                            <p><label class="form-label">14.00 <input type="radio" name="time-show" value="14.00" /></label></p>
+                                            <p><label class="form-label">15.00 <input type="radio" name="time-show" value="15.00" /></label></p>
+                                            <p><label class="form-label">16.00 <input type="radio" name="time-show" value="16.00" /></label></p>
+                                            <p><label class="form-label">17.00 <input type="radio" name="time-show" value="17.00" /></label></p>
+                                            <p><label class="form-label">18.00 <input type="radio" name="time-show" value="18.00" /></label></p>
+                                            <p><label class="form-label">19.00 <input type="radio" name="time-show" value="19.00" /></label></p>
+                                            <p><label class="form-label">20.00 <input type="radio" name="time-show" value="20.00" /></label></p>
+                                        </div>
+                                        <div class="col-sm">
+                                            <p class="date">20 марта</p>
+                                            <p><label class="form-label">10.00 <input type="radio" name="time-show" value="10.00" /></label></p>
+                                            <p><label class="form-label">11.00 <input type="radio" name="time-show" value="11.00" /></label></p>
+                                            <p><label class="form-label">12.00 <input type="radio" name="time-show" value="12.00" /></label></p>
+                                            <p><label class="form-label">13.00 <input type="radio" name="time-show" value="13.00" /></label></p>
+                                            <p><label class="form-label">14.00 <input type="radio" name="time-show" value="14.00" /></label></p>
+                                            <p><label class="form-label">15.00 <input type="radio" name="time-show" value="15.00" /></label></p>
+                                            <p><label class="form-label">16.00 <input type="radio" name="time-show" value="16.00" /></label></p>
+                                            <p><label class="form-label">17.00 <input type="radio" name="time-show" value="17.00" /></label></p>
+                                            <p><label class="form-label">18.00 <input type="radio" name="time-show" value="18.00" /></label></p>
+                                            <p><label class="form-label">19.00 <input type="radio" name="time-show" value="19.00" /></label></p>
+                                            <p><label class="form-label">20.00 <input type="radio" name="time-show" value="20.00" /></label></p>
+                                        </div>
+                                        <div class="col-sm">
+                                            <p class="date">21 марта</p>
+                                            <p><label class="form-label">10.00 <input type="radio" name="time-show" value="10.00" /></label></p>
+                                            <p><label class="form-label">11.00 <input type="radio" name="time-show" value="11.00" /></label></p>
+                                            <p><label class="form-label">12.00 <input type="radio" name="time-show" value="12.00" /></label></p>
+                                            <p><label class="form-label">13.00 <input type="radio" name="time-show" value="13.00" /></label></p>
+                                            <p><label class="form-label">14.00 <input type="radio" name="time-show" value="14.00" /></label></p>
+                                            <p><label class="form-label">15.00 <input type="radio" name="time-show" value="15.00" /></label></p>
+                                            <p><label class="form-label">16.00 <input type="radio" name="time-show" value="16.00" /></label></p>
+                                            <p><label class="form-label">17.00 <input type="radio" name="time-show" value="17.00" /></label></p>
+                                            <p><label class="form-label">18.00 <input type="radio" name="time-show" value="18.00" /></label></p>
+                                            <p><label class="form-label">19.00 <input type="radio" name="time-show" value="19.00" /></label></p>
+                                            <p><label class="form-label">20.00 <input type="radio" name="time-show" value="20.00" /></label></p>
+                                        </div>
+                                        <div class="col-sm">
+                                            <p class="date">22 марта</p>
+                                            <p><label class="form-label">10.00 <input type="radio" name="time-show" value="10.00" /></label></p>
+                                            <p><label class="form-label">11.00 <input type="radio" name="time-show" value="11.00" /></label></p>
+                                            <p><label class="form-label">12.00 <input type="radio" name="time-show" value="12.00" /></label></p>
+                                            <p><label class="form-label">13.00 <input type="radio" name="time-show" value="13.00" /></label></p>
+                                            <p><label class="form-label">14.00 <input type="radio" name="time-show" value="14.00" /></label></p>
+                                            <p><label class="form-label">15.00 <input type="radio" name="time-show" value="15.00" /></label></p>
+                                            <p><label class="form-label">16.00 <input type="radio" name="time-show" value="16.00" /></label></p>
+                                            <p><label class="form-label">17.00 <input type="radio" name="time-show" value="17.00" /></label></p>
+                                            <p><label class="form-label">18.00 <input type="radio" name="time-show" value="18.00" /></label></p>
+                                            <p><label class="form-label">19.00 <input type="radio" name="time-show" value="19.00" /></label></p>
+                                            <p><label class="form-label">20.00 <input type="radio" name="time-show" value="20.00" /></label></p>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+
+                        <!--ВКЛАДКА ФОТО-->
+                        <div class="tab-pane fade" id="photo-form" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <form id="photo" action="#" method="get">
+                                <p>
+                                    <label for="photo-chack" class="form-label">Установите "флажок", если Вы планируете посетить это мероприятие</label>
+                                    <input type="checkbox" id="photo-chack">
+                                </p>
+                                <p>
+                                    <label for="count-photo" class="form-label">Сколько билетов Вам необходимо?</label>
+                                    <input id="count-photo" autofocus type="number" min="1" max="5" step="1" value="0" />
+                                </p>
+                                <p>Ниже выберите время и дату посещения</p>
+
+                                <fieldset name="photo">
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <p class="date">19 марта</p>
+                                            <p><label class="form-label">10.00 <input type="radio" name="time-photo" value="10.00" /></label></p>
+                                            <p><label class="form-label">11.00 <input type="radio" name="time-photo" value="11.00" /></label></p>
+                                            <p><label class="form-label">12.00 <input type="radio" name="time-photo" value="12.00" /></label></p>
+                                            <p><label class="form-label">13.00 <input type="radio" name="time-photo" value="13.00" /></label></p>
+                                        </div>
+                                        <div class="col-sm">
+                                            <p class="date">20 марта</p>
+                                            <p><label class="form-label">10.00 <input type="radio" name="time-photo" value="10.00" /></label></p>
+                                            <p><label class="form-label">11.00 <input type="radio" name="time-photo" value="11.00" /></label></p>
+                                            <p><label class="form-label">12.00 <input type="radio" name="time-photo" value="12.00" /></label></p>
+                                            <p><label class="form-label">13.00 <input type="radio" name="time-photo" value="13.00" /></label></p>
+
+                                        </div>
+                                        <div class="col-sm">
+                                            <p class="date">21 марта</p>
+                                            <p><label class="form-label">10.00 <input type="radio" name="time-photo" value="10.00" /></label></p>
+                                            <p><label class="form-label">11.00 <input type="radio" name="time-photo" value="11.00" /></label></p>
+                                            <p><label class="form-label">12.00 <input type="radio" name="time-photo" value="12.00" /></label></p>
+                                            <p><label class="form-label">13.00 <input type="radio" name="time-photo" value="13.00" /></label></p>
+                                        </div>
+                                        <div class="col-sm">
+                                            <p class="date">23 марта</p>
+                                            <p><label class="form-label">18.00 <input type="radio" name="time-photo" value="10.00" /></label></p>
+                                            <p><label class="form-label">19.00 <input type="radio" name="time-photo" value="11.00" /></label></p>
+                                            <p><label class="form-label">20.00 <input type="radio" name="time-photo" value="12.00" /></label></p>
+                                            <p><label class="form-label">21.00 <input type="radio" name="time-photo" value="13.00" /></label></p>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+
+                        <!--ВКЛАДКА ВСТРЕЧИ-->
+                        <div class="tab-pane fade" id="meet-form" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <form id="meet" action="#" method="get">
+                                <p>
+                                    <label for="meet-chack" class="form-label">Установите "флажок", если Вы планируете посетить это мероприятие</label>
+                                    <input type="checkbox" id="meet-chack">
+                                </p>
+                                <p>
+                                    <label for="count-meet" class="form-label">Сколько билетов Вам необходимо?</label>
+                                    <input id="count-meet" autofocus type="number" min="1" max="20" step="1" value="0" />
+                                </p>
+                                <p>Ниже выберите время и дату посещения</p>
+
+                                <fieldset name="meet">
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <p class="date">22 марта</p>
+                                            <p><label class="form-label">10.00 - 12.00 <input type="radio" name="time-meet" value="10.00 - 12.00" /></label></p>
+                                            <p><label class="form-label">14.00 - 16.00 <input type="radio" name="time-meet" value="14.00 - 16.00" /></label></p>
+                                        </div>
+                                        <div class="col-sm">
+                                            <p class="date">23 марта</p>
+                                            <p><label class="form-label">10.00 - 12.00 <input type="radio" name="time-meet" value="10.00 - 12.00" /></label></p>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+
+                        <!--ВКЛАДКА МАСТЕРСКОЙ-->
+                        <div class="tab-pane fade" id="workshop-form" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <form id="workshop" action="#" method="get">
+                                <p>
+                                    <label for="workshop-chack" class="form-label">Установите "флажок", если Вы планируете посетить это мероприятие</label>
+                                    <input type="checkbox" id="workshop-chack">
+                                </p>
+                                <p>
+                                    <label for="count-workshop" class="form-label">Сколько билетов Вам необходимо?</label>
+                                    <input id="count-workshop" autofocus type="number" min="1" max="15" step="1" value="0" />
+                                </p>
+                                <p>Ниже выберите время и дату посещения</p>
+
+                                <fieldset name="workshop">
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <p class="date">22 марта</p>
+                                            <p><label class="form-label">10.00 - 12.00 <input type="radio" name="time-workshop" value="10.00 - 12.00" /></label></p>
+                                            <p><label class="form-label">14.00 - 16.00 <input type="radio" name="time-workshop" value="14.00 - 16.00" /></label></p>
+                                        </div>
+                                        <div class="col-sm">
+                                            <p class="date">23 марта</p>
+                                            <p><label class="form-label">10.00 - 12.00 <input type="radio" name="time-workshop" value="10.00 - 12.00" /></label></p>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+
+                        <!--ВКЛАДКА ВЕЧЕРИНКИ-->
+                        <div class="tab-pane fade" id="party-form" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <form id="party" action="#" method="get">
+                                <p>
+                                    <label for="party-chack" class="form-label">Установите "флажок", если Вы планируете посетить это мероприятие</label>
+                                    <input type="checkbox" id="party-chack">
+                                </p>
+                                <p>
+                                    <label for="count-party" class="form-label">Сколько билетов Вам необходимо?</label>
+                                    <input id="count-party" autofocus type="number" min="1" max="20" step="1" value="0" />
+                                </p>
+                                <p>Ниже выберите время и дату посещения</p>
+
+                                <fieldset name="party">
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <p class="date">23 марта</p>
+                                            <p><label class="form-label">19.00 - 23.00 <input type="radio" name="time-party" value="19.00 - 23.00" /></label></p>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-3">
+                    <!--КАЛЬКУЛЯТОР СТОИМОСТИ-->
+                    <div class="card calculator">
+                        <h5 class="card-header">Калькулятор стоимости билета</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <div class="card text-center" style="width: 100%;">
+                                    <div class="card-body">
+                                        <h4 class="card-title" id="price">0.00</h4>
+                                        <p class="card-text">цена билета данного мероприятия</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="card text-center" style="width: 100%;">
+                                    <div class="card-body">
+                                        <h4 class="card-title" id="ticket_amount">0.00</h4>
+                                        <p class="card-text">с учётом количества билетов</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="card text-center" style="width: 100%;">
+                                    <div class="card-body">
+                                        <h4 class="card-title" id="total_amount">0.00</h4>
+                                        <p class="card-text">общая сумма заказа</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!--СФОРМИРОВАТЬ ЗАКАЗ-->
+                        <div class="card-footer">
+                            <div id="come_on">
+                                <button id="ticket_booked" type="button" data-bs-toggle="modal" data-bs-target="#ticket">проверить билет</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!--ВИДЕО-->
+    <section class="container vodeo_cont">
+        <div class="row align-items-center">
+            <div class="col ratio ratio-16x9">
+                <video preload="auto" no-controls autoplay loop playsinline muted>
+                    <source src="video/shadow.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                    <source src="video/shadow.webm" type='video/webm; codecs="vp8, vorbis"' />
+                </video>
+            </div>
+            <div class="col text-center">
+                <p class="vodeo-text tx-name fs-1">Shadow ART Territory</p>
+                <p class="vodeo-text fs-4">сотри видео при покуке билета</p>
+            </div>
+        </div>
+        
+    </section>
+
+
     <footer>
         <div class="container text-center">
             <div class="row">
                 <div class="col-lg-6 p-0 call">
-                    <p>Заказать звонок</p>
+                    <p>Связаться с организаторами: +375 (29) 999-99-99</p>
                 </div>
                 <div class="col-lg-6 p-0">
                     <a><img src="img/Icons/facebook.png" /></a>
@@ -89,5 +456,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
     <script src="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/js/dist/mdb5/plugins/multi-carousel.min.js"></script>
+
+    <script src="js/ticket_calculator.js"></script>    
 </body>
+
 </html>
