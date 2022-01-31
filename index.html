@@ -28,7 +28,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="ticketlabel">Shadow ART Territory</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">&#9932</button>
+                    <button type="button" class="btn-close-custom" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="show event">
@@ -72,7 +72,7 @@
                         <p>Стоимость посещения: <span class="summa">0.00</span></p>
                     </div>
                     <div>
-                        <p>Сумма чека: <span class="total">0</span></p>                        
+                        <p>Сумма чека: <span class="total">0</span></p>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -112,19 +112,19 @@
                 <div class="multi-carousel">
                     <div class="multi-carousel-inner">
                         <div class="multi-carousel-item" style="width: 33.3333%;">
-                            <img src="img/meet.jpg" data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/4.webp" alt="Place Royale Bruxelles" class="w-100 multi-carousel-img">
+                            <img src="img/party.jpg" alt="Вечеринка" class="w-100 multi-carousel-img party_img" data-bs-toggle="tooltip" data-bs-html="true" title="Подробности по клику">
                         </div>
                         <div class="multi-carousel-item" style="width: 33.3333%; margin-left: 0px;">
-                            <img src="img/party.jpg" data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp" alt="Table Full of Spices" class="w-100 multi-carousel-img">
+                            <img src="img/show.jpg" alt="Выставка" class="w-100 multi-carousel-img show_img" data-bs-toggle="tooltip" data-bs-html="true" title="Подробности по клику">
                         </div>
                         <div class="multi-carousel-item" style="width: 33.3333%; margin-left: 0px;">
-                            <img src="img/photo.jpg" data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/2.webp" alt="Winter Landscape" class="w-100 multi-carousel-img">
+                            <img src="img/photo.jpg" alt="Фото-зона" class="w-100 multi-carousel-img phpto_img" data-bs-toggle="tooltip" data-bs-html="true" title="Подробности по клику">
                         </div>
                         <div class="multi-carousel-item" style="width: 33.3333%; margin-left: 0px;">
-                            <img src="img/show.jpg" data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/3.webp" alt="View of the City in the Mountains" class="w-100 multi-carousel-img">
+                            <img src="img/meet.jpg" alt="Встреча с мастером" class="w-100 multi-carousel-img meet_img" data-bs-toggle="tooltip" data-bs-html="true" title="Подробности по клику">
                         </div>
                         <div class="multi-carousel-item" style="width: 33.3333%; margin-left: 0px;">
-                            <img src="img/workshop.jpg" data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/3.webp" alt="View of the City in the Mountains" class="w-100 multi-carousel-img">
+                            <img src="img/workshop.jpg" alt="Мастерская" class="w-100 multi-carousel-img workshop_img" data-bs-toggle="tooltip" data-bs-html="true" title="Подробности по клику">
                         </div>
                     </div>
 
@@ -420,18 +420,23 @@
     <!--ВИДЕО-->
     <section class="container vodeo_cont">
         <div class="row align-items-center">
-            <div class="col ratio ratio-16x9">
-                <video preload="auto" no-controls autoplay loop playsinline muted>
+            <div class="col ratio ratio-16x9 ">
+                <video class="animate" preload="auto" no-controls autoplay loop playsinline muted>
                     <source src="video/shadow.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
                     <source src="video/shadow.webm" type='video/webm; codecs="vp8, vorbis"' />
                 </video>
+                <div class="promo card text-center">
+                    <div class="card-body">
+                        <p class="card-title" style="font-size: 4vw;">Приятных впечатлений</p>
+                    </div>
+                </div>
             </div>
             <div class="col text-center">
                 <p class="vodeo-text tx-name fs-1">Shadow ART Territory</p>
-                <p class="vodeo-text fs-4">сотри видео при покуке билета</p>
+                <p class="vodeo-text fs-4">Нажми на видео при покуке билета</p>
             </div>
         </div>
-        
+
     </section>
 
 
@@ -457,7 +462,9 @@
 
     <script src="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/js/dist/mdb5/plugins/multi-carousel.min.js"></script>
 
-    <script src="js/ticket_calculator.js"></script>    
+    <script src="js/ticket_calculator.js"></script>
+    <!--<script src="js/gallery.js"></script>-->
+    <script src="js/desaturate_video.js"></script>
 </body>
 
 </html>
